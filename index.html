@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bubble Shooter</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <script src="js/lib/createjs.min.js"></script>
+  <script src="js/Position.js"></script>
+  <script src="js/Bubble.js"></script>
+  <script src="js/GridSpace.js"></script>
+  <script src="js/Renderer.js"></script>
+  <script src="js/Equation.js"></script>
+  <script src="js/Game.js"></script>
+  <script>
+    //<![CDATA[
+      window.addEventListener('load', function () {
+       (new bubbleShooter.Game()).init();
+     }, false);
+    //]]>
+  </script>
+</head>
+<body>
+  <section>
+    <div id="state-indicator"></div>
+    <div id="bg-space"></div>
+    <div id="bg-planets"></div>
+    <canvas id="bg-game" width="796"></canvas>
+    <canvas id="game"></canvas>
+    <canvas id="playing-area"></canvas>
+    <div id="equation">
+      <span id="question"></span>
+      <span>=</span>
+      <span id="answer">?</span>
+    </div>
+    <div id="screen-gameover"></div>
+    <div id="sound-icon"></div>
+  </section>
+</body>
+</html>
