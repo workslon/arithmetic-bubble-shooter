@@ -80,6 +80,7 @@ body #equation {
   left: 50%;
   top: 0;
   text-align: center;
+  visibility: hidden;
 }
 body #equation span {
   font-size: 1.3em;
